@@ -14,6 +14,7 @@ main {
     margin: 0 auto;
 }
 
+/* regole float */
 .container::after {
     content: "";
     display: table;
@@ -22,22 +23,36 @@ main {
 
 .row {
     float: left;
-    /* background-color: antiquewhite; */
     margin: 5% 0.5%;
     width: calc(97% / 3);
     height: fit-content;
 }
 
+/* regole immagini */
 .immagine {
     position: relative;
     top: 0;
     left: 0;
 }
 
-img {
+.immagine img {
     width: 100%;
 }
 
+.hidden {
+    width: 100%;
+    display: none;
+}
+
+.row:hover .hidden {
+    display: block;
+}
+
+.row:hover img {
+    display: none;
+}
+
+/* regole cuore */
 .cuore {
     position: absolute;
     top: 5%;
@@ -47,6 +62,7 @@ img {
     font-size: 110%;
 }
 
+/* regole etichette */
 .tag {
     position: absolute;
     bottom: 5%;
@@ -71,6 +87,7 @@ img {
     left: 0;
 }
 
+/* regole dettagli prodotto */
 .dettagli_prodotto {
     font-size: 85%;
 }
