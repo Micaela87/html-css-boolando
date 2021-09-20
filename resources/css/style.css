@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 main {
     width: 80%;
     margin: 0 auto;
@@ -18,8 +22,84 @@ main {
 
 .row {
     float: left;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     margin: 5% 0.5%;
     width: calc(97% / 3);
-    height: 200px;
+    height: fit-content;
+}
+
+.immagine {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.cuore {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    padding: 2% 3%;
+    background-color: white;
+    font-size: 110%;
+}
+
+.tag {
+    position: absolute;
+    bottom: 5%;
+    padding: 1% 2%;
+    font-size: 85%;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+
+.sconto {
+    left: 0;
+    background-color: red;
+}
+
+.sostenibilita {
+    background-color: green;
+    left: 51px;
+}
+
+#no_tag_sconto {
+    left: 0;
+}
+
+.dettagli_prodotto {
+    font-size: 85%;
+}
+
+.brand, .nome_prodotto {
+    display: block;
+}
+
+.prezzo_scontato, .prezzo_pieno {
+    display: inline-block;
+}
+
+.brand {
+    font-size: 75%;
+}
+
+.nome_prodotto {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.prezzo_scontato {
+    font-weight: bold;
+    font-size: 85%;
+    color: red;
+}
+
+.prezzo_pieno {
+    font-size: 80%;
+    text-decoration: line-through;
 }
